@@ -13,7 +13,7 @@
     </form>
 
     {% for car in cars %}
-    <p>{{car.registration}}</p>
+    <a href="{% url 'car_details' car.car_id %}">{{car.registration}}</a><br><br>
     {% endfor %}
 </body>
 </html>
