@@ -19,3 +19,10 @@ def homeview(request):
 
     }
     return render(request,"car_list.html",context)
+
+def car_details(request,car_id):
+    car=Car.objects.get(car_id=car_id)
+    context={
+        "car":car
+    }
+    return render(request,"car_details.html",context)
