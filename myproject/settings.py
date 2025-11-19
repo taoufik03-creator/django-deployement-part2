@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-wy4i#1)p&5rr*uk8c)x2=_me-grz4splhp7hnr1za5!$cd3nl%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['your-app-name.onrender.com']
+ALLOWED_HOSTS = ['web-production-b5a80.up.railway.app']
 
 
 # Application definition
@@ -122,3 +122,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-production-b5a80.up.railway.app'
+]
+
