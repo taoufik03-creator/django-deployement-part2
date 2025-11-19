@@ -22,5 +22,5 @@ from myapp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",homeview),
-    path("car_list/<uuid:car_id>",car_details,name="car_details")
+    path("car_details/<uuid:car_id>",car_details,name="car_details")
 ]
